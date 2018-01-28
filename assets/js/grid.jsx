@@ -64,7 +64,7 @@ class Grid extends React.Component {
 
 		else{
 		  var tid;
-		  if (this.state.secondguess === -1){
+		  if ((this.state.secondguess === -1) && (index !== this.state.firstguess)){
 		     this.state.secondguess = index;
 		     var disp_values = this.state.disp_values.slice();
 		     disp_values[index] = this.state.asso_values[index];
