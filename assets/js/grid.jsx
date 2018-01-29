@@ -148,9 +148,9 @@ class Grid extends React.Component {
 			}
 		}
 		if (count === disp_values.length){
-		   return(
-			<p>You Won!</p>
-		   );}
+		   alert('You Won ! Click ok to restart the game!');
+		   this.restart();
+		   }
 		else{
 			return (<p></p>);
 		}
